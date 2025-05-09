@@ -1,0 +1,179 @@
+.single-event-page {
+  background-color: var(--main-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.single-event-page h1 {
+  font-size: 2.2rem;
+  font-weight: 100;
+  color: var(--font-pink);
+}
+
+.single-event-page h2 {
+  font-size: 2.1rem;
+  color: var(--font-pink);
+}
+
+/* Event description */
+.single-event-page .event-page-description {
+  font-family: sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 1.3rem;
+  max-width: 250px;
+  color: var(--font-white);
+}
+
+/* Event content section */
+.single-event-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Event page view */
+.single-event-view .single-event-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-event-view .single-event-page p {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.single-event-view .price {
+  border-bottom: none;
+  margin: 2rem;
+}
+
+.single-event-view .ticket-card h3 {
+  font-size: 1.1rem;
+}
+
+/* Event info sections */
+.single-event-page .event-info-time {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--font-green);
+}
+
+.single-event-page .event-info-where {
+  font-size: 1.2rem;
+  color: var(--font-white);
+}
+
+/* Search bar */
+.search-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+.search-bar-input-wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+}
+
+.event-search-input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  padding-left: 2.2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #3e3749;
+  color: var(--font-white);
+  margin: 1rem 0;
+  border: none;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.8rem;
+  transform: translateY(-50%);
+  color: #5b6180;
+  pointer-events: none;
+  font-size: 1.2rem;
+}
+
+/* Event list */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  gap: 1rem;
+}
+
+.event-list h3 {
+  font-size: 1.3rem;
+  color: var(--font-white);
+}
+
+/* Event group */
+.event-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.event-group .event-title {
+  font-size: 2.1rem;
+  color: var(--font-pink);
+  margin: 0;
+}
+
+.event-group .event-info {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.event-group .event-info-time {
+  margin:0 !important;
+  font-weight: bold;
+  color: var(--font-green);
+ 
+}
+
+.event-group .event-info-where {
+  color: var(--font-white);
+  margin: 0!important;
+}
+
+/* För skärmläsare */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; 
+  border: 0;
+}
+
+
+@media screen and (max-width: 450px) {
+  .event-list{
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .event-list h3 {
+    font-size: 1rem;
+  }
+}

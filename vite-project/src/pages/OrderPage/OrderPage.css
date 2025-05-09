@@ -1,0 +1,199 @@
+
+.order-page {
+    background-color: var(--main-bg);
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+/* Title and empty page message */
+.order-page__title {
+    font-size: 2rem;
+    color: var(--font-pink);
+    margin-bottom: 2rem;
+}
+
+.order-page p{
+    font-family: var(--secondary-font);
+}
+.order-page__empty {
+    font-size: 1.2rem;
+    color: var(--font-white);
+    text-align: center;
+}
+
+
+/* Order list */
+.order-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.ticket-name__order h3{
+    font-family: var(--main-font);
+}
+
+.ticket-item__info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ticket name and details*/
+.ticket-item__name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--font-pink);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.ticket-item__details {
+    color: var(--font-green);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.ticket-item__amount {
+    justify-content: center;
+    font-weight: bold;
+    color: var(--font-green);
+    margin-top: 0.5rem;
+}
+
+/* Total price section */
+.total-price p {
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 1.7rem;
+    font-weight: 100;
+    color: var(--font-white);
+    padding: 1rem 0 0;
+}
+
+.total-order-price {
+    margin-top: 0rem;
+}
+
+.total-price > .total-order-price {
+    text-shadow: 2px 2px 4px var(--font-pink);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* Ticket boxes */
+.ticket-box__order {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.ticket-info__order {
+    text-align: center;
+}
+
+.ticket-name__order {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--font-pink);
+    text-shadow: none;
+}
+
+.ticket-details,
+.ticket-location {
+    color: var(--font-green);
+    font-size: 1rem;
+}
+
+/* Ticket counter box */
+.ticket-counter-box__order {
+    border: 2px solid var(--font-pink);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: var(--main-bg);
+    margin: .5rem 0;
+    width: 90%;
+}
+
+.ticket-counter-label__order {
+    font-size: 2.5rem;
+    color: var(--font-white);
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.ticket-counter__order {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid var(--font-pink);
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    width: 100%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Button styling + - */
+.ticket-counter__order button {
+    border: none;
+    color: var(--font-pink);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.link-button {
+    width: 100%;
+}
+
+/* ticket quantity */
+.ticket-counter__order span {
+    color: var(--font-white);
+    font-weight: bold;
+    min-width: 2rem;
+    text-align: center;
+    padding: 1rem 3rem;
+    border-left: 2px solid var(--font-pink);
+    border-right: 2px solid var(--font-pink);
+}
+
+/* Order ticket info section */
+.ticket-info__order {
+    padding: .5rem;
+    width: 100%;
+    text-align: left;
+}
+
+.ticket-name__order {
+    font-family: var(--main-font);
+    font-size: 2rem;
+    color: var(--font-pink);
+    font-weight: 100;
+}
+
+.ticket-details__order {
+    color: var(--font-green);
+    font-size: 1.1rem;
+}
+
+
+/* Order page  */
+.order-page > p {
+    margin: 0.5rem;
+}
+
+.order-confirmation {
+    width: 100%;
+}
+@media screen and (max-width: 450px) {
+
+  .order-page .button{
+    font-size: 1.3rem;
+  }
+}

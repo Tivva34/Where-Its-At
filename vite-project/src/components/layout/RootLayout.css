@@ -1,0 +1,26 @@
+
+.root-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 4rem; 
+  color: var(--font-white);
+  overflow-y: auto; 
+  box-sizing: border-box; 
+ 
+}

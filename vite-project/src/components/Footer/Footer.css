@@ -1,0 +1,29 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  height: 4rem;
+  background-color: var(--main-bg);
+  border-top: 2px solid var(--font-pink);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.footer a {
+  color: var(--font-pink);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.footer a:hover {
+  color: var(--font-pink);
+}
+
+
+.footer a.active {
+  color: var(--font-pink); 
+}

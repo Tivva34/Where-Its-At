@@ -1,0 +1,109 @@
+.event-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  width: 100%; 
+  max-width: 600px; 
+  
+}
+
+.event-line{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--font-white); 
+}
+.eventcard, h3{
+  font-family: sans-serif;
+  text-shadow: 2px 2px 4px #ff5ca2;
+}
+  
+.event-card:hover { 
+  transform: scale(1.015);
+}
+  
+.date-box {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  border: 1px solid var(--font-white);
+  color: var(--font-white);
+  font-weight: bold;
+  flex-shrink: 0;
+}
+.date-box span{
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 800;
+}
+  
+.event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  
+}
+  
+.events, h1 {
+  color: var(--font-pink);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+  
+.event-info h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--font-pink);
+  margin: 0;
+}
+  
+.event-info p {
+  font-size: 1rem;
+  color: var(--font-white);
+  margin: 0;
+}
+  
+.event-info .event-location {
+  font-size: 1rem;
+}
+  
+.event-info .event-time {
+  font-size: 1rem;
+  font-weight: bold;
+}
+  
+.event-card p{
+  font-family: var(--secondary-font);
+}
+.event-card, .price {
+  align-items: end;
+}
+  
+.price {
+  font-size: 1.3rem;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  color: var(--font-green);
+  align-self: end;
+}
+  
+.date-day {
+  font-size: 1.5rem;
+}
+  
+.date-month {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+  

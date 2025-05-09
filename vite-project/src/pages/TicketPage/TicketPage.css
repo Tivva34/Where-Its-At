@@ -1,0 +1,213 @@
+
+.ticket-summary-page {
+  background: linear-gradient(to bottom, var(--font-pink), var(--main-bg));
+  padding: 0;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.ticket-summary-page h1 {
+  margin: 2rem 1rem;
+  color: var(--font-white); 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.ticket-summary-page p{
+  font-family: var(--fira-sans);
+}
+ /* Ticket summary list container */
+.ticket-summary-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 1rem; 
+}
+
+/* Ticket card  */
+.ticket-card {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  min-width: 400px;
+  box-sizing: border-box;
+}
+
+.ticket {
+  background: var(--font-white);
+  color: var(--font-black);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ticket-card .ticket {
+  padding: 0;
+}
+
+.ticket-section {
+  padding-bottom: 0;
+}
+
+
+.label {
+  font-family: var(--fira-sans);
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+/* What section  */
+.what h2 {
+  font-family: "Georgia", serif;
+  color: var(--font-pink);
+  padding: .5rem 0 1.5rem;
+  border-bottom: 2px dotted var(--font-black);
+}
+
+/* Where section */
+
+.where p {
+  text-align: left;
+  
+}
+ /* Ticket details layout */
+.ticket-details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dotted var(--font-black);
+  border-top: 2px dotted var(--font-black);
+  align-items: center;
+}
+
+.ticket-details div p {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--font-black);
+  padding: .2rem 0;
+}
+
+/* Barcode section */
+.barcode {
+  text-align: center;
+  background-color: var(--font-white);
+}
+
+.bars {
+  width: 50%;
+  height: 70px;
+  background: repeating-linear-gradient(
+    90deg,
+    #111 4px,
+    #111 6px,
+    #fff 3px,
+    #fff 7px
+  );
+  margin: 1rem auto 0;
+}
+
+.code {
+  font-family: var(--fira-sans);
+  font-size: 0.7rem;
+  color: #888;
+  justify-self: center;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+.seat-number {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+/* Middle section */
+.middle {
+  
+  border-left: 2px dotted var(--font-black);
+  border-right: 2px dotted var(--font-black);
+  padding: 1rem 2rem;
+}
+
+/* Links*/
+.ticket-summary-page a {
+  text-align: center;
+}
+
+.ticket-summary-page > p, 
+.ticket-summary-page span, 
+.ticket-summary-page label {
+  padding: .5rem .7rem;
+  text-align: left;
+}
+
+.ticket-summary-page > p {
+  text-align: center;
+  color: var(--font-white);
+}
+
+/* Ticket section */
+.ticket-section .section-seat-info {
+  text-align: left;
+  margin-left: .7rem;
+  font-family: var(--secondary-font);
+}
+
+.ticket h2 {
+  padding-left: .7rem;
+  font-family: var(--main-font);
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.ticket-details > div {
+  font-family: var(--secondary-font);
+  flex: 1;
+  padding: .5rem 0.5rem;
+}
+
+.ticket-details span,
+.ticket-details p {
+  padding-left: 0;
+}
+
+.ticket-section.what.what {
+  margin-top: .5rem;
+}
+
+.ticket-section.where > p {
+  font-size: 1.7rem;
+  color: var(--font-black);
+  margin: .7rem 0 1rem;
+}
+
+.ticket-section.where strong{
+  margin-left: .7rem;
+  font-family: var(--fira-sans);
+}
+/* Button margin */
+.ticket-summary-page > a {
+  margin: 0 1rem;
+}
+
+
+@media screen and (max-width: 450px) {
+  .section-seat-info {
+    font-size: 1rem !important;
+  }
+
+  .ticket-summary-page .button{
+    font-size: 1.3rem;
+  }
+}
